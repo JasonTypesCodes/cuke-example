@@ -1,0 +1,11 @@
+
+apply from: 'https://github.com/samueltbrown/gradle-cucumber-plugin/raw/master/repo/gradle-cucumber-plugin/gradle-cucumber-plugin/0.2/cucumberinit.gradle'
+
+repositories{
+  mavenCentral()
+}
+
+dependencies{
+  cucumberRuntime files("${jar.archivePath}"), 'info.cukes:cucumber-java:1.0.11' 
+}
+
