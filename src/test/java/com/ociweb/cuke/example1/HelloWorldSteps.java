@@ -19,6 +19,11 @@ public class HelloWorldSteps {
 	public void I_have_a_HelloWorld_instance_with(String name) throws Throwable {
 		testObject = new HelloWorld(name);
 	}
+	
+	@Given("^I have a HelloWorld instance with a greeting of \"([^\"]*)\" and name of \"([^\"]*)\"$")
+	public void I_have_a_HelloWorld_instance_with_a_greeting_of_and_name_of(String greeting, String name) throws Throwable {
+		testObject = new HelloWorld(greeting, name);
+	}
 
 	@When("^I ask it to say hi$")
 	public void I_ask_it_to_say_hi() throws Throwable {
