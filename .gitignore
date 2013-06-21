@@ -3,7 +3,6 @@
 .project
 .settings/*
 bin/*
-src/*
 target/*
 cuke-example.iml
 cuke-example.ipr
