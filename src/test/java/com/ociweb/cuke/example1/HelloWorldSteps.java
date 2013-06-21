@@ -14,6 +14,11 @@ public class HelloWorldSteps {
 	public void I_have_a_HelloWorld_instance_without_arguments() throws Throwable {
 		testObject = new HelloWorld();
 	}
+	
+	@Given("^I have a HelloWorld instance with \"([^\"]*)\"$")
+	public void I_have_a_HelloWorld_instance_with(String name) throws Throwable {
+		testObject = new HelloWorld(name);
+	}
 
 	@When("^I ask it to say hi$")
 	public void I_ask_it_to_say_hi() throws Throwable {
@@ -21,7 +26,7 @@ public class HelloWorldSteps {
 	}
 	
 	@Then("^it should say \"([^\"]*)\"$")
-	public void it_should_say(String arg1) throws Throwable {
-		assertEquals(arg1, result);
+	public void it_should_say(String expectedResult) throws Throwable {
+		assertEquals(expectedResult, result);
 	}
 }
