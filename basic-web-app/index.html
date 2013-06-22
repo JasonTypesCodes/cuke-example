@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Basic Web App With Tables</title>
+			<!-- DataTables CSS -->
+			<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+ 
+			<!-- jQuery -->
+			<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+ 
+			<!-- DataTables -->
+			<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="main.js"></script>
+	</head>
+	<body>
+		<div>
+			<form id='input_form'>
+				<table>
+					<tr>
+						<td>First Name:</td>
+						<td><input type='text' name='first_name'></input></td>
+					</tr>
+					<tr>
+						<td>Last Name:</td>
+						<td><input type='text' name='last_name'></input></td>
+					</tr>
+					<tr>
+						<td>Age:</td>
+						<td><input type='text' name='age'></input></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input id='submit_button' type='button' value='Submit'></input></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div>
+			<h3>Results:</h3>
+		</div>
+		<table cellpadding="0" cellspacing="0" border="0" class="display" id="result_table" width="100%">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>	
+		</table>
+	</body>
+</html>
