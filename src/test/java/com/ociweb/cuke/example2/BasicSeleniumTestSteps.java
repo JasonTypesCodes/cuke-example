@@ -81,7 +81,7 @@ public class BasicSeleniumTestSteps {
 		}
 	}
 	
-	@When("^I have \"([^\"]*)\" users in the table$")
+	@When("^I have \"([^\"]*)\" people in the table$")
 	public void I_have_users_in_the_table(int numberOfUsers) throws Throwable {
 		for(int x = 0; x < numberOfUsers; x++){
 			addPersonToTable("First" + x, "Last" + x, String.valueOf(x));

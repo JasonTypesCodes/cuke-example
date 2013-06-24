@@ -18,18 +18,18 @@ Feature: Application manages a table of person information.
   	 
   
   Scenario: Table limits number of visible rows
-  	 When I have "25" users in the table
+  	 When I have "25" people in the table
   	 Then my result table should show "10" users.
   	 
   
   Scenario: In tables larger than the base set, user can navigate to the next set.
-  	  And I have "15" users in the table
+  	  And I have "15" people in the table
   	 When I click "Next"
   	 Then my result table should show "5" users.
   	 
   
   Scenario: In tables larger than the base set, increasing the number of visible rows shows more rows.
-  	  And I have "15" users in the table
+  	  And I have "15" people in the table
   	 When I select "25" as the number of entries to show
   	 Then my result table should show "15" users.
   	 
@@ -42,9 +42,9 @@ Feature: Application manages a table of person information.
   	   | Gerald     | Ford      | 93  |
   	 When I sort by "Age"
   	 Then the following entries should be in my table:
-  	  | first name | last name  | age |
-  	  | James      | Garfield   | 48  |
-  	  | John       | Adams      | 61  |
-  	  | Gerald     | Ford       | 93  |
+  	   | first name | last name | age |
+  	   | James      | Garfield  | 48  |
+  	   | John       | Adams     | 61  |
+  	   | Gerald     | Ford      | 93  |
   	  
   	  
